@@ -12,7 +12,7 @@ print(a*b) # multiplication
 print(a/b) # division  --->output 2.75
 print(a//b) # division-lower whole number -->floor --->output 2
 print(a%b) # modulus
-print(3**2) # to the power (3squre)--->9
+print(3**3) # to the power (3squre)--->27
 
 
 

@@ -14,7 +14,7 @@ if myAlphabet=='a'or myAlphabet=='e'or myAlphabet=='i'or myAlphabet=='o'or myAlp
 else:print(myAlphabet,"is a Consonent")
 
 #Letter grade
-marks=30
+marks=int(input("Monir vai pleae Enter your marks: "))
 if 80<=marks<=100:print("A+")
 elif marks>=70 and marks<=79: print("A")
 elif marks>=60 and marks<=69: print("-A")

@@ -1,4 +1,4 @@
-#Tuples--> similar data structure to List but it is immuteable we can change it's value but we can change list
+#Tuples--> similar data structure to List but it is immuteable we cant change it's value but we can change list's value
 
 #Creating Tuples-->have a variable then put the values in parenthesis ()
 #students=("Sohag","Sharif","Orfat", "Tofayel")
