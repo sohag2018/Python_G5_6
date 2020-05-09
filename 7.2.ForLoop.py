@@ -10,7 +10,7 @@ while index<length:
     index=index+1
 print("")
 
-#For loop
+#For each loop
 for i in num:    #after traversing value will be stored in i--->so we need to print i
     print(i,end=" ")
 print("")# just for a new line before new print statement

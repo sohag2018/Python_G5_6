@@ -1,8 +1,10 @@
 #List---> an obj of Python where we can store data
 
 subject=["C","C++","Python", "Java","Ruby"] # we can store int,double,str --->subject is the name of list
+#subject.append("one") #adding
 print(subject) #to print all--print the List
 print(subject[0])#to print [0] index value-->C
+print(subject[:2])#to print from [2] index & above index -->Python, Java, Ruby
 print(subject[2:])#to print from [2] index & above index -->Python, Java, Ruby
 print(subject[-1])#to print last index-->Ruby
 
@@ -21,8 +23,9 @@ print("swift" not in subject)  #True
 
 # to add more in our list
 
-print(subject+["swift"])
-print("swift" in subject)  #True but still it will show False-->previous line actuly didnt add in actual list-->need to use append() for adding
+print(subject+["swift"])#It will be added as concatenate
+print(subject)
+print("swift" in subject)  # False-->previous line actuly didnt add in actual list-->need to use append() for adding
 subject.append("swift")#will be added last
 print("swift" in subject)#this time it will show True
 subject.insert(2,"Java Script") # will b added in 2 index position and previous items will be shifted to next position
@@ -33,8 +36,12 @@ print(len(subject)) # it will print the lenght of the list--->7
 subject.remove("swift")
 print(subject," & Length: ",len(subject))
 
+
 # to sort
-subject.sort() # Accesding order
+list1=[1,8,9,2,8]
+list1.sort() # Accesding order  only for int
+print(list1)
+subject.sort()  #we faced a proble to sor after adding by append()
 print(subject)
 
 subject.reverse()#Descending
@@ -44,9 +51,17 @@ print(subject)
 subject2=subject.copy()
 print("subject2: ",subject2)
 
+subject3=["sfk","lsflj"]
+subject2.extend(subject3)
+print(subject2)
+print(subject3)
 #to clear the list items
 subject2.clear()
 print(subject2) # []---no value
+del subject3
+#print(subject3) #-->will show not defined
+
+
 
 
 

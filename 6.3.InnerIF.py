@@ -7,15 +7,16 @@ if marks>=40:
 else:print("Fail")
 
 #(2)
-num1=30
-num2=20
-num3=-40
+num1=60
+num2=70
+num3=-100
 
 if num1>num2:
-    if num1>num3:print(num1)
-    else:print(num3)
+    if num1>num3:
+        print("Num1",num1)
+    else:print("Num3",num3)
 
 
-if num1<num2: #else:-->we could use else here too
-    if num2>num3: print(num2)
-    else:print(num3)
+elif num1<num2: #else:-->we could use else here too
+    if num2>num3: print("Num2",num2)
+    else:print("Num3",num3)
