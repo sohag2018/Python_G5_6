@@ -1,0 +1,22 @@
+****
+In Python, it is not necessary to define the main function every time you write a program.
+This is because the Python interpreter executes from the top of the file unless a specific function is defined.
+Hence, having a defined starting point for the execution of your Python program is useful to better understand
+how your program works.
+
+****
+def main():
+    print("Hello, World!")
+    if __name__== "__main__" :
+main()
+In the above example, you can see, there is a function called ‘main()’. This is followed by a conditional ‘if’ statement
+that checks the value of __name__, and compares it to the string “__main__“. On evaluation to True, it executes main().
+
+****
+Python has a special built-in variable, called __name__. This variable gets assigned the string “__main__” depending on
+how you are running or executing the script.
+if you are running the script directly, Python is going to assign “__main__” to __name__, i.e., __name__= “__main__”.
+(This happens in the background).
+In short, __name__ variable helps you to check if the file is being run directly or if it has been imported.
+
+ ****

@@ -1,4 +1,8 @@
 from abc import ABC,abstractmethod
+#abc: python file
+#Abstract Base Class(ABC):
+#Helper class that provides a standard way to create an ABC using inheritance."""
+
 class Shape(ABC):
     def __init__(self,dim1,dim2):
         self.dim1=dim1
