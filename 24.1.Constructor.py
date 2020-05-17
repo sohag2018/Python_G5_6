@@ -5,6 +5,9 @@ class Employees:
     name=""
     id=""
     #creating constructor
+    def __init__(self,name):
+        self.name=name
+        self.id=id
     def __init__(self,name,id):
         self.name=name
         self.id=id
@@ -13,6 +16,7 @@ class Employees:
         print(f"Emplooyee_Name:{self.name},Employee_ID:{self.id}")
 
 #Creating obj
+
 emp1=Employees("Moniruzzaman Monir",505)
 emp1.display()
 print("---------------------------------")
