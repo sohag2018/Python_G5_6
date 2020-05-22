@@ -13,7 +13,7 @@ class IPhone:  #-->Base/Super/Parent class
 #class2 which inherits IPhone class
 class Samsung(IPhone): #-->in() mentioned the class name that is being inherited -->Derived/Sub/child class
     #function3:
-    def takePhoto(self):
+    def takesPhoto(self):
         print("You can a take a photo")
 
 #obj creation and call the func

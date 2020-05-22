@@ -8,8 +8,9 @@ class Shape:
 
 
 class Triangle(Shape):
+
     def area(self):
-        area=0.5*(self.dim1*self.dim2)
+        area=0.5*(10*7)
         print("Area of Triangle:",area)
 
 tr1=Triangle(20,30)

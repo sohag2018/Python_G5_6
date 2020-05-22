@@ -1,24 +1,28 @@
 from abc import ABC,abstractmethod
 #abc: python file
 #Abstract Base Class(ABC):
-#Helper class that provides a standard way to create an ABC using inheritance."""
+#ABC Helper class that provides a standard way to create an ABC using inheritance."""
 
 class Shape(ABC):
+
     def __init__(self,dim1,dim2):
         self.dim1=dim1
         self.dim2=dim2
 
+    #method declared:
     @abstractmethod
     def area(self):
         pass
 
 
 class Triangle(Shape):
+    #method implemented
     def area(self):
         area=0.5*(self.dim1*self.dim2)
         print("Area of Triangle:",area)
 
-tr1=Triangle(20,30)
+#creating obj of Triangle-->indirectly passing the value for Shape calss constructor
+tr1=Triangle(20,5)
 tr1.area()
 
 class Ractangle(Shape):

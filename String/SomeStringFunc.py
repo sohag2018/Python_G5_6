@@ -48,7 +48,7 @@ zfill()	Fills the string with a specified number of 0 values at the beginning
 
 print("# capitalize(), upper(), lower(), swapcase(), title(), casefold(),isupper(), islower(), istitle()-------")
 
-txt = "hello, and welcome you all."
+txt = "Hello, and WELCOME you all."
 # txt = "Hello, And Welcome You All."
 print("capitalize():", txt.capitalize())  # Hello, and welcome you all.
 print("upper():", txt.upper())  # HELLO, AND WELCOME YOU ALL.
@@ -62,7 +62,7 @@ print("isupper():", txt.istitle())  # F
 
 print("#center():------------------------------")
 txt = "banana"
-print(txt.center(20))
+print(txt.center(30))
 
 print("#count():------occurance------------------------")
 txt = "My name is Sohag. This name is very common in Bangladesh."
@@ -70,18 +70,18 @@ print(txt.count("name"))
 
 print("#:endswith()-------------------------------------")
 txt = "My name is Sohag."
-print(txt.endswith("Sohag."))  # endswith(".") etc
+print(txt.endswith("Sohag"))  # endswith(".") etc
 
 print("#:expandtabs()-------------------------------------")
 txt = "H\te\tl\tl\to"
-x = txt.expandtabs(5)
+x = txt.expandtabs(10)
 print(x)
 
 print("#:find()---for the position-----------------------------")
 # finds the first occurrence of the specified value.
 # almost the same as the index()--But index() method raises an exception and find() returns -1 if not found
 txt = "My name is Sohag"
-x = txt.find("So")
+x = txt.find("Z")
 print(x)
 
 print("#:index()----for the position---------------------------------")
@@ -96,14 +96,14 @@ print(txt.format(p=49))
 print("#:isdecimal()---like isalnum(), isalpha(), isnumeric()----------")
 # True if all the characters are decimals (0-9).
 # method is used on unicode objects.  (we can use the unicode chart)
-txt = "9"
+txt = "0"
 # txt = "\u0033" #unicode for 3
 x = txt.isdecimal()
 print(x)
 
-print("#:-------------------------------------")
+print("#:---join()----------------------------------")
 myTuple = ("Sohag", "Orfat", "Sharif")
-x = "-".join(myTuple)
+x = "*".join(myTuple)
 print(x)
 
 print("#:ljust()-------------------------------------")
@@ -167,5 +167,5 @@ print(x)
 a="Sohag"[0]
 print(a)
 
-print("#:-------------------------------------")
+print("#:--Special Comand shorcut-----------to switch to prev    ctrl (^) E------------------------")
 print("#:-------------------------------------")

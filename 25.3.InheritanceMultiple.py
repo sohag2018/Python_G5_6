@@ -9,10 +9,10 @@ class B():
     def display(self):
         print("I am from B class")
 
-class C(A,B): # Multiple Inheritance
+class C(B,A): # Multiple Inheritance
     pass
 
 c1=C()
 c1.display() #-->If same method in both class then first one will be prefred
-
+#class C(B,A) as B is first so B will be printed
 

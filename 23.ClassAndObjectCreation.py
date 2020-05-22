@@ -16,6 +16,8 @@ class Students: #syntax of creating class
         self.name=name
         self.gpa=gpa
         print(id,name,gpa)
+    def display(self):
+        print(self.id)
 
 
 class Employees:
@@ -24,7 +26,8 @@ class Employees:
 #creating an object of Students class
 #Students st1=new Students()
 #st1=Employees()
-#st1= Students() # func starts with lower case but class upper case
+st1= Students() # func starts with lower case but class upper case
+st1.display()
 # print(isinstance(st1,Students)) # True if obj creation is ok
 # print("............................................")
 # st1.id=101
