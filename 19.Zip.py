@@ -7,7 +7,7 @@ address=["Jamaica", "Manhattan", "Woodside","Woodside","LongIsland","VA"]
 # our target is making a list like-->[(101, Monir, Jamaica),(),().....]-->in some Tuples ()
 #Syntax-->zip(list, list)--->to put in new list--type cast with list
 
-member=list(zip(id,name,address))
+member=list(zip(id,name,address)) #zip accepts iterable obj
 print("<<<<<<<single value>>>>>>>>>>>>>>")
 print(member[0])
 

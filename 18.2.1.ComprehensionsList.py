@@ -6,7 +6,7 @@ print(result) #output-[1, 4, 9, 16, 25]
 print("_______________Comprensions lit_________________________")
 ##Now let's see how Comprehension list works
 # Syntax-->do everythin in []  use a for each loop-->put value in a variable   now manupulate new variable as per your need
-# [x for x in num]
+#[x for x in num]
 result=[x*x for x in num] #-->put the num-value in x (for each loop)-->each x value is multiplyng by itself (first x)
 print(result)
 

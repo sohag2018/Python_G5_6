@@ -10,20 +10,20 @@
 #(1): Trying to print x without assigning any value for it
 
 #What happen if we dont handle the exception:
-'''y=5
-print(x) 
-print(y)
-#Without the try block, the program will crash and raise an error:
-#It will give:---> NameError: name 'x' is not defined
-# It will not print y value though value was assigned
+# y=5
+# print(x)
+# print(y)
+# #Without the try block, the program will crash and raise an error:
+# #It will give:---> NameError: name 'x' is not defined
+# # It will not print y value though value was assigned
 
-'''
+
 
 #What happen if we use try---except:
 y=5
 try:
     print(x) #We didnt assigned value for x
-except:print("An exception occured")
+except:print("An exception occured/handled")
 print(y)
 #when try block fails and raises error then control goes to except blocks and print "An exception occured"
 # Then control goes for other steps and print y value
@@ -34,14 +34,19 @@ print(y)
 print("#Many Exceptions Blocks----------------------")
 try:
   print(x)
+except ArithmeticError as ar:
+  print(ar)
 except NameError:
-  print("Variable x is not defined")
+  print("This is NameError")
 except:
   print("Something else went wrong")
 
 print("## Else Block:---------------------------------")
 #to define a block of code to be executed if no errors were raised
 #In this example, the try block does not generate any error:
+
+
+#Need to study more
 try:
   print("Sohag")
 except:
@@ -58,7 +63,7 @@ print("## Finally Block------------------------------")
 
 try:
   print(x)
-except:
+except NameError:
   print("Variable is not defined")
 finally:
   print("print me no matter what")
@@ -72,10 +77,10 @@ try:
   f = open("Test.txt")
   f.write("Sharif is a quick learner")
 except:
-  print("file not found")
+    print("file not found")
 finally:
     print("if file is open then close it")
-    # f.close()
+    #f.close()
     # print("File is closed now")
 
   #In try block we are trying to open Test.txt file by using open() but as file doesnt exist it goes to except block
@@ -84,23 +89,29 @@ finally:
   # as f is not defined so thrrow an error at last
 
 print("## Raise an exception--->raise keyword----------------")
-#
-# #Raise an error and stop the program if x is lower than 0:
+
+#Raise an error and stop the program if x is lower than 0:
 # x = -1
 # if x < 0:
 #   raise Exception("Sorry, no numbers below zero")
 # '''Output: raise Exception("Sorry, no numbers below zero")
 # Exception: Sorry, no numbers below zero'''
-#
-# # as we raised the Exception message "Sorry, no numbers below zero"
-# # so it is printingn Exception: Sorry, no numbers below zero
+
+# x=7
+# if x>=8:
+#   print(x)
+# raise Exception("sjlfjjs")
+
+
+# as we raised the Exception message "Sorry, no numbers below zero"
+# so it is printingn Exception: Sorry, no numbers below zero
 
 print("## define what kind of error to raise----------------")
-# #define what kind of error to raise, and the text to print to the user
-# x = "Sohag"
-# if not type(x) is int:
-#   raise TypeError("You should enter only int")
-#
-# '''Output: raise TypeError("You should enter only int")
-# TypeError: You should enter only int'''
+#define what kind of error to raise, and the text to print to the user
+x = "Sohag"
+if not type(x) is int:
+  raise TypeError("You should enter only int")
+
+'''Output: raise TypeError("You should enter only int")
+TypeError: You should enter only int'''
 

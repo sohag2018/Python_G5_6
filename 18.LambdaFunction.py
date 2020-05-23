@@ -23,7 +23,7 @@ def calculaiton(a):
 print(calculaiton(3)) #27
 print("----------------seperator--------------------------------")
 #Lambda syntax:--> (lambda parameter: expression)(value of param)
-print((lambda a:a*a*a)(3))  #25
+print(lambda a:a*a*a,3)  #25
 print("----------------seperator--------------------------------")
 
 

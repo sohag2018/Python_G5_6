@@ -7,7 +7,7 @@ class Iphone:
     def sendMessage(self):
         print("Message from Iphone class")
 
-class Samsung(Iphone):
+class Samsung (Iphone):
     
     def makeACall(self):
         print("I am from Samung class")
